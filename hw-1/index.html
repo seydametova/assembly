@@ -6,23 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Супер приложение</title>
-    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="./src/main.js"></script>
 </head>
 
 <body>
-    <h3>Калькулятор дат</h3>
-    <form id="dateCalc">
+    <button>Калькулятор дат</button>
+    <button>Таймер</button>
+    <div>
+        <h3>Калькулятор дат</h3>
+        <form id="dateCalc-form">
+            <label>
+                <strong>Первая дата</strong>
+                <input type="date" name="firstDate">
+            </label>
+            <label>
+                <strong>Вторая дата</strong>
+                <input type="date" name="secondDate">
+            </label>
+            <button>Рассчитать промежуток</button>
+            <div id="dateCalc-result"></div>
+        </form>
+    </div>
+    <div>
+        <h3>Таймер</h3>
         <label>
-            <strong>Первая дата</strong>
-            <input type="date" name="firstDate">
+            <strong>Введите время (сек.)</strong>
+            <input id="userTime" type="number">
         </label>
-        <label>
-            <strong>Вторая дата</strong>
-            <input type="date" name="secondDate">
-        </label>
-        <button>Рассчитать промежуток</button>
-        <div id="dataCalc-result"></div>
-    </form>
+        <button id="startClick">Старт</button>
+        <button id="stopClick">Стоп</button>
+    </div>
+
 </body>
 
 </html>
