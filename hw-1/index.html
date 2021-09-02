@@ -7,13 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Супер приложение</title>
     <script type="module" src="./src/main.js"></script>
+    <style>
+        .hide {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
-    <button>Калькулятор дат</button>
-    <button>Таймер</button>
-    <div>
-        <h3>Калькулятор дат</h3>
+    <button id="buttonDate">Калькулятор дат</button>
+    <button id="buttonTimer">Таймер</button>
+    <div id="calcForm">
+        <h3></h3>
         <form id="dateCalc-form">
             <label>
                 <strong>Первая дата</strong>
@@ -27,14 +32,15 @@
             <div id="dateCalc-result"></div>
         </form>
     </div>
-    <div>
-        <h3>Таймер</h3>
+    <div id="timerForm" class="hide">
+        <h3></h3>
         <label>
             <strong>Введите время (сек.)</strong>
             <input id="userTime" type="number">
         </label>
         <button id="startClick">Старт</button>
         <button id="stopClick">Стоп</button>
+        <div id="timer-result"></div>
     </div>
 
 </body>
