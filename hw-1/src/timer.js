@@ -25,7 +25,6 @@ function startTime(event) {
         }
     }, 1000);
 
-
 }
 
 function stopTime(event) {
